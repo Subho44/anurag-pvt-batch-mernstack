@@ -1,0 +1,5 @@
+project name:Ecosmart City
+Features:Dashboard showing polulution,cleanliness status,plantation
+        :Report-> waste,cleanissues,polulution
+        :Display transformation progress with charts and maps
+        :Admin can update and manage status
