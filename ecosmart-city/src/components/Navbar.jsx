@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({onSearch}) => {
 
   return <>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -26,8 +26,8 @@ const Navbar = () => {
       
     </ul>
     <form class="d-flex">
-      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" onChange={(e)=> onSearch(e.target.value)}/>
+      
     </form>
   </div>
 </nav>

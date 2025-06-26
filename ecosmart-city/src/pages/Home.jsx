@@ -8,29 +8,32 @@ const dummydata = [
     image:'./src/assets/img1.jpg'
   },
     {
-    title:'Air quality2', 
+    title:'Water quality', 
     description:'imporoved by 20%',
     status:'Improved',
     image:'./src/assets/img2.jpg'
   },
     {
-    title:'Air quality3', 
+    title:'Dusbin waste', 
     description:'imporoved by 20%',
     status:'Improved',
     image:'./src/assets/img3.jpg'
   },
     {
-    title:'Air quality4', 
+    title:'tree plan wasted', 
     description:'imporoved by 20%',
     status:'Improved',
     image:'./src/assets/img2.jpg'
   },
 
 ];
-const Home = () => {
+const Home = ({searchterm}) => {
+  const filtereddata = dummydata.filter(x => 
+    x.title.toLowerCase().includes(searchterm.toLowerCase())
+  )
   return <>
     <h2 className='mb-4'>Ecosmart City</h2>
-    <Cardlist data={dummydata}/>
+    <Cardlist data={filtereddata}/>
   </>
 }
 
