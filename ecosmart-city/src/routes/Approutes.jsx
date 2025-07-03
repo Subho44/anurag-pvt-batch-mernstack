@@ -7,7 +7,7 @@ import Adminpanel from '../pages/Adminpanel'
 import Navbar from '../components/Navbar'
 import { useState } from 'react'
 
-const Approutes = ({searchterm}) => {
+const Approutes = () => {
   const[searchterm,setSearchterm] = useState('');
 
   return <>
