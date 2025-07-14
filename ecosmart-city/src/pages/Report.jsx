@@ -1,9 +1,10 @@
 import React from 'react'
+import Reportform from '../components/Reportform'
 
 const Report = () => {
-  return (
-    <div>Report</div>
-  )
+  return <>
+    <Reportform/>
+  </>
 }
 
 export default Report

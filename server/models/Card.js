@@ -5,4 +5,4 @@ const cardSchema = new mongoose.Schema({
     description:String,
     status:String
 });
-module.exports = mongoose.model('Card',cardSchema);
+module.exports = mongoose.model('Card-city',cardSchema);
