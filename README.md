@@ -10,4 +10,10 @@ find.modelname=> all view
 findbyid.modelname = one view
 findbyidandupdate.modelname = update
 findbyidanddelete.modelname = delete
+#MERN STACK AUTHENTICATION
+REGISTER,LOGIN,LOGOUT,DASHBOARD
+PROTECTED ROUTES
+JWT-BASED AUTHTENTICATION
+NAVBAR CHANGE AFTER LOGIN
+
 

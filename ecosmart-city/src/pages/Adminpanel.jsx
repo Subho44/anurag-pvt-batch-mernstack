@@ -1,9 +1,10 @@
 import React from 'react'
+import Reportlist from '../components/Reportlist'
 
 const Adminpanel = () => {
-  return (
-    <div>Adminpanel</div>
-  )
+  return <>
+    <Reportlist/>
+  </>
 }
 
 export default Adminpanel
